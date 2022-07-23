@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>InterpolatedColorConsole</id>
+    <title>InterpolatedColorConsole</title>
+    <authors>Rick Drizin</authors>
+    <owners>Rick Drizin</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Drizin/InterpolatedColorConsole</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>InterpolatedColorConsole: Colored Console where colors can just be interpolated within strings, making it easier to use multiple colors</description>
+    <copyright>Copyright Rick Drizin 2022</copyright>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\InterpolatedColorConsole.*" target="lib\net472" />
+    <file src="bin\$configuration$\InterpolatedColorConsole.*" target="lib\netstandard2.0" />
+  </files>
+</package>

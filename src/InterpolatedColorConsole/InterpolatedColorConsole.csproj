@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
+    <Authors>Rick Drizin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Drizin/InterpolatedColorConsole/</PackageProjectUrl>
+    <Description>Yes, it's yet another Colored Console. But where colors can just be interpolated within strings, making it easier to use multiple colors.</Description>
+    <Copyright>Rick Drizin</Copyright>
+    <Company>Rick Drizin</Company>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageId>InterpolatedColorConsole</PackageId>
+    <DocumentationFile>InterpolatedColorConsole.xml</DocumentationFile>
+	<PackageTags>color console;</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <!-- Include symbol files (*.pdb) in the main .nupkg -->
+	<PackageReadmeFile>NuGetReadMe.md</PackageReadmeFile>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="NuGetReadMe.md" Pack="true" PackagePath="\" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
