@@ -8,7 +8,7 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/Drizin/InterpolatedColorConsole</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>InterpolatedColorConsole: Colored Console where colors can just be interpolated within strings, making it easier to use multiple colors</description>
+    <description>InterpolatedColorConsole: Colored Console with a Fluent API and where colors can just be interpolated within strings</description>
     <copyright>Copyright Rick Drizin 2022</copyright>
     <dependencies>
     </dependencies>
