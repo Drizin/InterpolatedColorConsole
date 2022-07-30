@@ -8,7 +8,7 @@
     <Description>Yes, it's yet another Colored Console. But with a Fluent API and where colors can just be interpolated within strings, making it easier to use multiple colors.</Description>
     <Copyright>Rick Drizin</Copyright>
     <Company>Rick Drizin</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>InterpolatedColorConsole</PackageId>
     <DocumentationFile>InterpolatedColorConsole.xml</DocumentationFile>
@@ -20,7 +20,24 @@
 
   </PropertyGroup>
 
-  <ItemGroup>
+	<Choose>
+		<When Condition="'$(Configuration)' == 'Debug'">
+			<PropertyGroup>
+				<SignAssembly>True</SignAssembly>
+				<AssemblyOriginatorKeyFile>..\debug.snk</AssemblyOriginatorKeyFile>
+			</PropertyGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<SignAssembly>True</SignAssembly>
+				<AssemblyOriginatorKeyFile>..\release.snk</AssemblyOriginatorKeyFile>
+			</PropertyGroup>
+		</Otherwise>
+	</Choose>
+
+
+
+	<ItemGroup>
 	<None Include="NuGetReadMe.md" Pack="true" PackagePath="\" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
