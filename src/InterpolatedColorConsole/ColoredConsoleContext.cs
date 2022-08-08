@@ -74,6 +74,8 @@ namespace InterpolatedColorConsole
         }
         private void InnerWriteFormattableArgument(TextWriter writer, object arg, string format)
         {
+            if (arg == null)
+                return;
             if (arg is ConsoleColor && (format == "background" || format == "bg"))
             {
                 _previousBackgroundColors.Push(Console.BackgroundColor);
